@@ -43,6 +43,12 @@
   padding-bottom: 23px;
 }
 
+@media (width <= 375px) {
+  .header {
+    min-block-size: 327px;
+  }
+}
+
 .header__title {
   font-size: clamp(3.063rem, 2.71rem + 1.504vw, 4.063rem);
   text-transform: uppercase;
@@ -122,6 +128,7 @@
 
 .image__label {
   position: absolute;
+  z-index: 1;
   font-family: var(--accent-font);
   font-size: 14px;
   text-shadow: 1px 0px 0px var(--font-shadow), -1px 0px 0px var(--font-shadow),
@@ -161,6 +168,20 @@
   letter-spacing: 0.033em;
   gap: 27px;
   text-align: left;
+}
+
+@media (width <= 375px) {
+  .card__content {
+    padding: 27px 26.1px 24px;
+  }
+
+  .extra {
+    padding-right: 24px;
+  }
+
+  .extra2 {
+    padding-right: 29px;
+  }
 }
 
 .button {
