@@ -5,22 +5,37 @@
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
 :root.theme-light {
-    --main-font-weight: 400;
-    --large-font-weight: 700;
-    --font-shadow: rgba(255, 255, 255, 0.6);
+  --main-font-weight: 400;
+  --large-font-weight: 700;
+  --font-shadow: rgba(255, 255, 255, 0.6);
 
-    --page-bg-color: #fff;
-    --accent-color: #000;
-    --bg-lines-color: #d3d3d3;
-    --bg-color: #e7e7e7 0.01%;
-    --bg-accent-color:#1a1a1a;
+  --page-bg-color: #fff;
+  --accent-color: #000;
+  --bg-lines-color: #d3d3d3;
+  --bg-color: #e7e7e7 0.01%;
+  --bg-accent-color: #1a1a1a;
 
-    --button-color:#fff;
+  --button-color: #fff;
 }
 
 :root.theme-dark {
+  --main-font-weight: 465;
+  --large-font-weight: 785;
+  --font-shadow: rgba(0, 0, 0, 0.6);
+
+  --page-bg-color: #000;
+  --accent-color: #00cc14;
+  --bg-lines-color: #000;
+  --bg-color: #007f0c;
+  --bg-accent-color: #004306;
+
+  --button-color: #00cc14;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
     --main-font-weight: 465;
-    --large-font-weight: 765;
+    --large-font-weight: 785;
     --font-shadow: rgba(0, 0, 0, 0.6);
 
     --page-bg-color: #000;
@@ -30,20 +45,5 @@
     --bg-accent-color: #004306;
 
     --button-color: #00cc14;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --main-font-weight: 465;
-        --large-font-weight: 765;
-        --font-shadow: rgba(0, 0, 0, 0.6);
-    
-        --page-bg-color: #000;
-        --accent-color: #00cc14;
-        --bg-lines-color: #000;
-        --bg-color: #007f0c;
-        --bg-accent-color: #004306;
-    
-        --button-color: #00cc14;
-    }
+  }
 }

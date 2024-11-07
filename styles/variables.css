@@ -8,18 +8,19 @@
 
   --page-bg-color: #fff;
   --accent-color: #000;
+
   --bg-lines-color: #d3d3d3;
   --bg-color: #e7e7e7 0.01%;
   --bg-accent-color: #1a1a1a;
   --bg-image: repeating-linear-gradient(
       to right,
       var(--bg-lines-color) 0 2px,
-      transparent 0px 2px
+      transparent 2px 4px
     ),
     repeating-linear-gradient(
       to bottom,
       var(--bg-lines-color) 0 2px,
-      transparent 0px 2px
+      transparent 2px 4px
     ),
     linear-gradient(to bottom, var(--bg-color), var(--bg-accent-color));
 
