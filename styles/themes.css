@@ -18,6 +18,22 @@
   --button-color: #fff;
 }
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --main-font-weight: 400;
+    --large-font-weight: 700;
+    --font-shadow: rgba(255, 255, 255, 0.6);
+
+    --page-bg-color: #fff;
+    --accent-color: #000;
+    --bg-lines-color: #d3d3d3;
+    --bg-color: #e7e7e7 0.01%;
+    --bg-accent-color: #1a1a1a;
+
+    --button-color: #fff;
+  }
+}
+
 :root.theme-dark {
   --main-font-weight: 465;
   --large-font-weight: 785;

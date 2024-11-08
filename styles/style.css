@@ -40,7 +40,7 @@
   margin: 100px 0 100px;
   border: 2px solid var(--accent-color);
   padding-top: 136px;
-  padding-bottom: 23px;
+  padding-bottom: 19px;
 }
 
 @media (width <= 375px) {
@@ -137,6 +137,7 @@
   inset-inline-end: min(3.467vi, 25px);
   inset-block-start: 25px;
   mix-blend-mode: hard-light;
+  opacity: 0.5;
 }
 
 @supports (-webkit-text-stroke: 1px var(--font-shadow)) {
@@ -157,8 +158,9 @@
 .card__content {
   display: flex;
   flex-direction: column;
-  padding: 28px 25px 24px;
+  padding: 27px 25px 24px;
   gap: 25px;
+  margin-bottom: 1px;
 }
 
 .card__content-text {
@@ -166,22 +168,18 @@
   flex-direction: column;
   font-size: 18px;
   line-height: 117%;
-  letter-spacing: 0.033em;
   gap: 27px;
   text-align: left;
 }
 
 @media (width <= 375px) {
   .card__content {
-    padding: 27px 26.1px 24px;
+    padding: 25px 26.1px 24px;
   }
 
   .extra {
+    padding-top: 27px;
     padding-right: 24px;
-  }
-
-  .extra2 {
-    padding-right: 29px;
   }
 }
 
@@ -388,7 +386,6 @@
 
 .theme-menu__button:focus-visible {
   opacity: 0.6;
-  transition: opacity 0.5s;
 }
 
 .theme-menu__button::after {
@@ -397,7 +394,7 @@
   width: 0%;
   height: 2px;
   background-color: var(--accent-color);
-  transition: width 0.5s, background-color 0.5s;
+  transition: width 0.3s, background-color 0.3s;
   transform: scaleX(1);
   opacity: 0.6;
 }
